@@ -1,6 +1,6 @@
 # Anagrams and Antigrams
 
-#### Check for anagrams and antigrams, {04/21/2017}_
+#### Check for anagrams and antigrams, {04/21/2017}
 
 #### By Sowmya Dinavahi
 
@@ -12,7 +12,6 @@ Create a website with an anagram method to check for the words with certain cond
 
 | Behavior | Input | Output |
 |----------|-------|--------|
-
 |The Program will check if two words are anagrams | eg: "tea".check_anagrams("eat")    |   "it is a anagram"    |
 |The Program will check if two words are anagrams regardless of case | eg: ("Tea".check_anagrams("eaT"))    |   "it is a anagram"    |
 |The program will check to see if two words are also palindromes.  | eg:("elle".check_palindrome) |    "it is a palindrome"    |
