@@ -1,12 +1,10 @@
 class String
-  define_method(:check_anagram) do |word2|
+  define_method(:check_anagrams) do |word2|
     letters_of_word1 = self.downcase.split("").sort
     letters_of_word2 = word2.downcase.split("").sort
     output = ""
     if(letters_of_word1 == letters_of_word2)
       output = ("it is a anagram")
-    else
-      output = ( "it is not a anagram")
     end
     output
   end
@@ -31,6 +29,18 @@ class String
         output = "You need to input actual words!"
       end
       return output
+    end
+  end
+
+  #checks if the word is
+  define_method(:check_antigrams) do |input|
+    words_array = []
+    word1 = self.downcase.split("").sort
+    word2 = input.downcase.split("").sort
+    if (word1 =! word2)
+      return "these letters have no matches and are antigrams"
+    else
+      return "these letters have matches and are anagrams"
     end
   end
 end
