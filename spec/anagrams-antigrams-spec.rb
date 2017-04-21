@@ -33,6 +33,6 @@ end
   describe 'String#check_antigrams' do
 
     it "checks the letters have no match and return 'these letters have no matches and are antigrams' " do
-      expect("hi".check_antigrams("bye")).to(eq('these letters have no matches and are antigrams'))
+      expect("hi".check_antigrams?("bye")).to(eq(true))
     end
 end
