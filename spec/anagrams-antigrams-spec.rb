@@ -14,3 +14,10 @@ describe 'String#check_palindrome' do
     expect("elle".check_palindrome).to(eq('it is a palindrome'))
   end
 end
+
+describe 'String#check_is_a_word' do
+
+  it "checks if the user input is a word or not and return 'it is a word' " do
+    expect("cat".check_is_a_word).to(eq('it is a word'))
+  end
+end
