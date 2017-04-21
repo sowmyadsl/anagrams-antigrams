@@ -28,7 +28,7 @@ class String
       if word.include?("a") | word.include?("e") | word.include?("i") | word.include?("o") | word.include?("u") | word.include?("y")
         output = "it is a word"
       else
-        output = "it is not a word"
+        output = "You need to input actual words!"
       end
       return output
     end
