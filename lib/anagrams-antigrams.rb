@@ -5,6 +5,8 @@ class String
     output = ""
     if(letters_of_word1 == letters_of_word2)
       output = ("it is a anagram")
+    else
+      output = ("it is not an anagram")
     end
     output
   end
@@ -19,16 +21,14 @@ class String
   end
 
   # checks if the input string is a "word" or not.
-  define_method(:check_is_a_word) do
+  define_method(:check_is_a_word?) do
     words = self.downcase.split(" ")
-    output = ""
     words.each() do |word|
       if word.include?("a") | word.include?("e") | word.include?("i") | word.include?("o") | word.include?("u") | word.include?("y")
-        output = "it is a word"
+         true
       else
-        output = "You need to input actual words!"
+         false
       end
-      return output
     end
   end
 
