@@ -1,8 +1,7 @@
 source('https://rubygems.org')
 
-gem('sinatra')
-gem('sinatra-contrib')
-gem('rspec')
-gem('capybara')
-gem('pry')
-gem('ffi-aspell')
+gem 'sinatra', '2.0.0.rc2'
+gem 'sinatra-contrib','2.0.0.rc2'
+gem 'rspec'
+gem 'capybara'
+gem 'pry'

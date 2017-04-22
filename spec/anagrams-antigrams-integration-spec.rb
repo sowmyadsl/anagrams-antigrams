@@ -7,7 +7,7 @@ describe("the word play path", {:type => :feature}) do
   it("processes the user input and returns correct result if its a palindrome") do
     visit("/")
     fill_in("string1", :with => "madam")
-    fill_in("string2", :with => "anagram")
+    fill_in("string2", :with => "madam")
     click_button("check")
     expect(page).to have_content("is a palindrome")
   end
@@ -15,6 +15,6 @@ describe("the word play path", {:type => :feature}) do
     visit("/")
     fill_in("string1", :with => "madam  ")
     click_button("check")
-    expect(page).to have_content("one of string is not valid")
+    expect(page).to have_content("One of the strings is not a word")
   end
 end
