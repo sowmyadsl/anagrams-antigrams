@@ -30,9 +30,21 @@ describe 'String#check_is_a_word' do
 end
 
 
-  describe 'String#check_antigrams' do
+describe 'String#check_antigrams' do
 
-    it "checks the letters have no match and return 'these letters have no matches and are antigrams' " do
-      expect("hi".check_antigrams?("bye")).to(eq(true))
-    end
+  it "checks the letters have no match and return 'these letters have no matches and are antigrams' " do
+    expect("hi".check_antigrams?("bye")).to(eq(true))
+  end
+end
+
+describe 'String#clean_string' do
+
+  it "checks the string has any extra spaces and return '' " do
+    expect("sowmya     ".clean_string).to(eq("sowmya"))
+  end
+
+  it "checks the string for any special characters and deletes them " do
+    expect("s@$#&&&t{}".clean_string).to(eq('st'))
+  end
+
 end

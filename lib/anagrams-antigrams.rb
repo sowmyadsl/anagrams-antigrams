@@ -46,6 +46,9 @@ class String
     end
   end
 
-
-
+#removes spaces and punctuations
+  define_method :clean_string do
+  modified_string = self.gsub!(/[^[:alpha:]]/,'')
+  modified_string
+  end
 end
