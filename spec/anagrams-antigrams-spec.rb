@@ -15,17 +15,17 @@ end
 describe 'String#check_palindrome' do
 
   it "if it is a anagram also check if it is a palindrome and return 'it is a palindrome' " do
-    expect("elle".check_palindrome).to(eq('it is a palindrome'))
+    expect("elle".check_palindrome("elle")).to(eq('it is a palindrome'))
   end
 end
 
 describe 'String#check_is_a_word' do
 
   it "checks if the user input is a word  and return 'it is a word' " do
-    expect("ruby".check_is_a_word).to(eq('it is a word'))
+    expect("ruby".check_is_a_word?).to(eq(true))
   end
   it "checks if the user input is a word  and return 'You need to input actual words!' " do
-    expect("ggg".check_is_a_word).to(eq('You need to input actual words!'))
+    expect("ggg".check_is_a_word?).to(eq(false))
   end
 end
 
@@ -33,7 +33,7 @@ end
 describe 'String#check_antigrams' do
 
   it "checks the letters have no match and return 'these letters have no matches and are antigrams' " do
-    expect("hi".check_antigrams?("bye")).to(eq(true))
+    expect("hi".check_antigrams("bye")).to(eq('is an antigram'))
   end
 end
 
