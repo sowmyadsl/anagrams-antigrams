@@ -1,5 +1,5 @@
 require 'rspec'
-require './lib/anagrams-antigrams.rb'
+require './lib/anagrams_antigrams.rb'
 
 describe 'String#check_anagrams' do
 

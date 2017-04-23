@@ -1,7 +1,7 @@
 require('sinatra')
 require('sinatra/reloader')
 also_reload('lib/**/*.rb')
-require('./lib/anagrams-antigrams')
+require('./lib/anagrams_antigrams')
 
 
 get('/') do

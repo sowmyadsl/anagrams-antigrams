@@ -22,14 +22,11 @@ class String
 
   # checks if the input string is a "word" or not.
   define_method(:check_is_a_word?) do
-    output = false
-    words = self.downcase.split("")
-    words.each() do |word|
-      if word.include?("a") | word.include?("e") | word.include?("i") | word.include?("o") | word.include?("u")| word.include?("y")
-         output = true
-      end
+     if /[aeiouy]/.match(self.downcase) #checks if the letters of the word entered has the "a","e","i","o","u","y".
+      return true
+    else
+      return false
     end
-    output
   end
 
   #checks if the letters that don't match are antigrams
@@ -47,7 +44,7 @@ class String
 
 #removes spaces and punctuations
   define_method :clean_string do
-  modified_string = self.gsub!(/[^[:alpha:]]/,'')
+  modified_string = self.gsub!(/[^[:alpha:]]/,'') #replaces anything entered other than alphabets to ""
   modified_string
   end
 end
