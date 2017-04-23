@@ -26,6 +26,7 @@
 * Run $ bundle
 * Run $ ruby app.rb
 * Browse http://localhost:4567/ in your web browser.
+* Open the Heroku link on a browser : https://protected-citadel-23966.herokuapp.com/
 
 
 ## Known Bugs
@@ -38,7 +39,7 @@ Feel free to contact me at sowmya.dsl@gmail.com
 
 ## Technologies Used
 
-HTML,CSS ,Ruby
+HTML,CSS,Ruby
 
 ### License
 
