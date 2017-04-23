@@ -4,9 +4,9 @@ class String
     letters_of_word2 = word2.downcase.split("").sort
     output = ""
     if(letters_of_word1 == letters_of_word2)
-      output = ("it is a anagram")
+      output = ("is a anagram")
     else
-      output = ("it is not an anagram")
+      output = ("is not an anagram")
     end
     output
   end
@@ -14,15 +14,16 @@ class String
   # checks if the string is a palindrome or not.
   define_method(:check_palindrome) do |input|
     if self.downcase == input.downcase.reverse
-      return "it is a palindrome"
+      return "is a palindrome"
     else
-      return "it is not palindrome"
+      return "is not palindrome"
     end
   end
 
   # checks if the input string is a "word" or not.
   define_method(:check_is_a_word?) do
-     if /[aeiouy]/.match(self.downcase) #checks if the letters of the word entered has the "a","e","i","o","u","y".
+    word = self
+     if /[aeiouy]/.match(word.downcase) #checks if the letters of the word entered has the "a","e","i","o","u","y".
       return true
     else
       return false

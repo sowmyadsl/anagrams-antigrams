@@ -6,7 +6,7 @@
 
 ## Description
 
-Create a website with an anagram method to check for the words with certain conditions .
+ A webpage that will return if entered words are anagrams, antigrams, or palindromes.
 
 ## Specifications
 

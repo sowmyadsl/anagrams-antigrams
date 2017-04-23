@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello Friend!</title>
+    <title>Welcome!</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
+    <style>
+    #check-button{
+    background-color: #555555; /* Black */
+    border: none;
+    color: white;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 23px;
+    }
+    #play-again{
+    background-color: #555555; /* Black */
+    padding: 9px 15px;
+    border: none;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    }
+    .form-group{
+      font-size: 20px;
+    }
+    #string1,#string2{
+      font-size: 20px;
+      font-style: bold;
+    }
+    *{
+      font-family: 'Cormorant Garamond', serif;
+    }
+    </style>
     <div class="container">
       <%= yield %>
     </div>

@@ -4,18 +4,18 @@ require './lib/anagrams_antigrams.rb'
 describe 'String#check_anagrams' do
 
   it "returns 'it is a anagram' if user enters 'tea' and checks with 'eat' " do
-    expect("tea".check_anagrams("eat")).to(eq('it is a anagram'))
+    expect("tea".check_anagrams("eat")).to(eq('is a anagram'))
   end
 
   it "returns 'it is a anagram' regardless of case " do
-    expect("Tea".check_anagrams("eaT")).to(eq('it is a anagram'))
+    expect("Tea".check_anagrams("eaT")).to(eq('is a anagram'))
   end
 end
 
 describe 'String#check_palindrome' do
 
   it "if it is a anagram also check if it is a palindrome and return 'it is a palindrome' " do
-    expect("elle".check_palindrome("elle")).to(eq('it is a palindrome'))
+    expect("elle".check_palindrome("elle")).to(eq('is a palindrome'))
   end
 end
 

@@ -1,5 +1,9 @@
 <h1>Here we go:</h1>
-<h2><%=@check_anagrams %></h2>
-<h2><%=@check_palindrome %></h2>
-<h2><%=@check_antigrams %><h2>
-  
+<% if @stringerrors.eql?("") %>
+  <h2><%=@string1%>  <%=@check_anagrams%> of <%=@string2%> </h2>
+  <h2><%=@string1%>  <%=@check_palindrome %> of <%=@string2%></h2>
+  <h2><%=@string1%>  <%=@check_antigrams %> of <%=@string2%><h2>
+<% else %>
+  <h2><%=@stringerrors%> </h2>
+<% end %>
+<a href = '/' id="play-again">Play Again</a>
