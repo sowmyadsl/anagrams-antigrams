@@ -14,9 +14,9 @@
 |----------|-------|--------|
 |The Program will check if two words are anagrams | eg: "tea".check_anagrams("eat")    |   "it is a anagram"    |
 |The Program will check if two words are anagrams regardless of case | eg: ("Tea".check_anagrams("eaT"))    |   "it is a anagram"    |
-|The program will check to see if two words are also palindromes.  | eg:("elle".check_palindrome) |    "it is a palindrome"    |
+|The program will check to see if two words are also palindromes.  | eg:("elle".check_palindrome) |    "elle is a palindrome"    |
 | The program will check to ensure that both inputs are actual words by checking to see if they both contain vowels        |  for eg: ("ruby").check_is_a_word    |  "it is a word"      |
-|The program will check for the words that are not anagram to check if they are antigrams | for eg: ("hi".check_antigrams("bye") |   "These words have no letter matches and are antigrams." |
+|The program will check for the words that are not anagram to check if they are antigrams | for eg: ("hi".check_antigrams("bye") |   "hi is an antigram bye." |
 |The program will check Remove spaces before comparing anagrams, also check that each individual word in the input string contains a vowel | for eg: "ruby".check_anagrams("ggg h") | "gggh is not a word"
 
 
